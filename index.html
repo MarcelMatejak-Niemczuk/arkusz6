@@ -3,55 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZGŁOSZENIA</title>
+    <title>Wykaz chorób</title>
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
 
+    <img src="zdrowia.png" alt="Życzymy zdrowia!">
+
     <header>
-        <h1>Zgłoszenia wydarzeń</h1>
+        <h1>Informacja o chorobach w Polsce</h1>
     </header>
+
+    <nav>
+        <a href="https://szpitale.pl/" target="_blank">Szpitale</a>
+        <a href="https://www.przychodnie.pl/" target="_blank">Przychodnie</a>
+        <a href="https://www.nfz.gov.pl/" target="_blank">NFZ</a>
+    </nav>
 
     <main>
         <section id="lewy">
-            <h2>Personel</h2>
-            <form action="index.php" method="post">
-                <input type="radio" name="zawod" value="1" id="policjant" checked>
-                <label for="policjant">Policjant</label><br>
-                
-                <input type="radio" name="zawod" value="2" id="ratownik">
-                <label for="ratownik">Ratownik</label><br>
-                
-                <button type="submit" name="pokaz">Pokaż</button>
-            </form>
+            <h2>Choroby zakaźne</h2>
 
-            <table>
-                <tr>
-                    <th>Id</th>
-                    <th>Imię</th>
-                    <th>Nazwisko</th>
-                </tr>
-            </table>
+            <ol>
+                <li><span>Grypa</span></li>
+                <li><span>Odra</span></li>
+                <li><span>Ospa wietrzna</span></li>
+                <li><span>COVID-19</span></li>
+                <li><span>Krztusiec</span></li>
+                <li><span>Różyczka</span></li>
+                <li><span>Świnka</span></li>
+                <li><span>Dur brzuszny</span></li>
+                <li><span>Tężec</span></li>
+                <li><span>Cholera</span></li>
+            </ol>
         </section>
 
         <section id="prawy">
-            <h2>Nowe zgłoszenie</h2>
-            <ol>
+            <h2>Objawy chorób</h2>
 
-            </ol>
+            <form method="post" action="">
+                <select name="choroba">
+                    <option>Grypa</option>
+                    <option>Odra</option>
+                    <option>Ospa wietrzna</option>
+                    <option>COVID-19</option>
+                </select>
 
-            <form action="index.php" method="post">
-                <label for="osoba_id">Wybierz id osoby z listy: </label>
-                <input type="number" name="osoba_id" id="osoba_id">
-                <br>
-                <button type="submit" name="dodaj">Dodaj zgłoszenie</button>
+                <button type="submit">Sprawdź</button>
             </form>
 
+            <div id="skrypt3">
+                Wynik działania skryptu 3
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Stronę wykonał: 00000000009</p>
+        <p>Stronę opracował: 000000009</p>
     </footer>
 
 </body>
