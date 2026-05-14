@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZGŁOSZENIA</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <header>
+        <h1>Zgłoszenia wydarzeń</h1>
+    </header>
+
+    <main>
+        <section id="lewy">
+            <h2>Personel</h2>
+            <form action="index.php" method="post">
+                <input type="radio" name="zawod" value="1" id="policjant" checked>
+                <label for="policjant">Policjant</label><br>
+                
+                <input type="radio" name="zawod" value="2" id="ratownik">
+                <label for="ratownik">Ratownik</label><br>
+                
+                <button type="submit" name="pokaz">Pokaż</button>
+            </form>
+
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                </tr>
+            </table>
+        </section>
+
+        <section id="prawy">
+            <h2>Nowe zgłoszenie</h2>
+            <ol>
+
+            </ol>
+
+            <form action="index.php" method="post">
+                <label for="osoba_id">Wybierz id osoby z listy: </label>
+                <input type="number" name="osoba_id" id="osoba_id">
+                <br>
+                <button type="submit" name="dodaj">Dodaj zgłoszenie</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Stronę wykonał: 00000000009</p>
+    </footer>
+
+</body>
+</html>
